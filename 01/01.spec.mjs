@@ -1,6 +1,6 @@
 import { deepStrictEqual } from "node:assert";
 import { test } from "node:test";
-import { distance, similarity, sortList } from "./distance.mjs";
+import { distance, similarity, sortList } from "./01.mjs";
 
 test("sortList", () => {
   const input = [46669, 54117, 25659, 18867, 94354];
