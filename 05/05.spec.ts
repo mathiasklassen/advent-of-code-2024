@@ -9,7 +9,6 @@ import {
   parseOrderingRules,
   parseUpdates,
   splitOrderingFromPageUpdates,
-  switchItems,
   updateOrderIsCorrect,
   updateToMap,
 } from "./05.ts";
@@ -292,18 +291,6 @@ test("main", () => {
   const expected = 143;
 
   const result = main(input);
-
-  deepStrictEqual(result, expected);
-});
-
-test("switchItems", () => {
-  const input = [75, 97, 47, 61, 53];
-  const firstIndex = 1;
-  const secondIndex = 2;
-
-  const expected = [75, 47, 97, 61, 53];
-
-  const result = switchItems(input, firstIndex, secondIndex);
 
   deepStrictEqual(result, expected);
 });

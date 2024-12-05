@@ -92,17 +92,6 @@ export function main(input: string): number {
   return middleSum;
 }
 
-export function switchItems(
-  array: number[],
-  firstIndex: number,
-  secondIndex: number
-): number[] {
-  const temp = array[firstIndex];
-  array[firstIndex] = array[secondIndex];
-  array[secondIndex] = temp;
-  return array;
-}
-
 /** same as updateOrderIsCorrect, only return values change */
 export function updateOrderComparator(
   update: number[],
